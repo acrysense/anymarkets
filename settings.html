@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, initial-scale=1.0">
+	<title>Anymarkets - Настройки</title>
+	<meta property="og:title" content="Anymarkets - Настройки">
+	<meta property="og:description" content="Описание проекта">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Anymarkets - Настройки">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="#" class="header__logotype">
+						<img src="img/logotype-short.svg" width="29" height="28" alt="Anymarkets">
+					</a>
+					<nav class="header-nav header__nav">
+						<ul class="header-nav__list">
+							<li class="header-nav__item @@analytics">
+								<a href="#" class="header-nav__link">Аналитика</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Товары</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Склад</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Отзывы и вопросы</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Рефералка</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__inner">
+						<ul class="header__buttons">
+							<li class="header__buttons-item">
+								<a href="#" class="header__buttons-link">
+									<svg class="header__buttons-icon">
+										<use xlink:href="img/sprite.svg#icon-info"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header__buttons-item @@support">
+								<a href="#" class="header__buttons-link">
+									<svg class="header__buttons-icon">
+										<use xlink:href="img/sprite.svg#icon-support"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header__buttons-item header__buttons-item--active">
+								<a href="settings.html" class="header__buttons-link">
+									<svg class="header__buttons-icon">
+										<use xlink:href="img/sprite.svg#icon-settings"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="header__buttons">
+							<li class="header__buttons-item">
+								<a href="#" class="header__buttons-link">
+									<svg class="header__buttons-icon">
+										<use xlink:href="img/sprite.svg#icon-exit"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- page -->
+			<div class="page">
+				<div class="container">
+					<div class="page__top">
+						<h1 class="page__heading">Настройки</h1>
+					</div>
+					<div class="tabs">
+						<ul class="tabs__list">
+							<li class="tabs__item is--active">
+								<button class="tabs__tab">Тариф и оплата</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__tab">Данные профиля</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__tab">Мои маркетплейсы</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__tab">Мои бренды</button>
+							</li>
+						</ul>
+						<div class="tabs__wrapper is--active"></div>
+						<div class="tabs__wrapper">
+							<div class="profile-data">
+								<div class="profile-data__wrapper">
+									<div class="profile-data__item">
+										<h3 class="profile-data__title">Личная информация</h3>
+										<form action="#" class="profile-data__form">
+											<div class="profile-data__inputs">
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-name" class="input-field__label">Имя</label>
+													<div class="input-field__inner">
+														<input type="text" id="profile-data-name" class="input-field__input" placeholder="">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-email" class="input-field__label">Электропочта</label>
+													<div class="input-field__inner">
+														<input type="email" id="profile-data-email" class="input-field__input" placeholder="" value="info@anymarkets.ru">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-phone" class="input-field__label">Телефон</label>
+													<div class="input-field__inner">
+														<input type="text" id="profile-data-phone" class="input-field__input" placeholder="">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+											</div>
+											<button class="profile-data__btn btn">Сохранить</button>
+										</form>
+									</div>
+									<div class="profile-data__item">
+										<h3 class="profile-data__title">Изменить пароль</h3>
+										<form action="#" class="profile-data__form">
+											<div class="profile-data__inputs">
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-old-password" class="input-field__label">Старый пароль</label>
+													<div class="input-field__inner">
+														<input type="password" id="profile-data-old-password" class="input-field__input" placeholder="">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-new-password" class="input-field__label">Новый пароль</label>
+													<div class="input-field__inner">
+														<input type="text" id="profile-data-new-password" class="input-field__input" placeholder="">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+												<div class="input-field input-field--grey profile-data__input">
+													<label for="profile-data-new-password-again" class="input-field__label">Новый пароль еще раз</label>
+													<div class="input-field__inner">
+														<input type="password" id="profile-data-new-password-again" class="input-field__input" placeholder="">
+														<span class="input-field__error">Неверное значение</span>
+													</div>
+												</div>
+											</div>
+											<button class="profile-data__btn btn">Сохранить</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+					</div>
+				</div>
+			</div>
+			<!-- end of page -->
+		</div>
+		<!-- end of content -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<div class="modal" id="modal-tarrifs">
+		<div class="modal__scroll">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

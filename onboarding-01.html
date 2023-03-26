@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1200px, initial-scale=1.0">
+	<meta name="viewport" content="width=1200, initial-scale=1.0">
 	<title>Anymarkets - Адаптация</title>
 	<meta property="og:title" content="Anymarkets - Адаптация">
 	<meta property="og:description" content="Описание проекта">
@@ -46,7 +46,7 @@
 							</nav>
 						</div>
 						<div class="onboarding__main">
-							<div class="onboarding__stage is--active">
+							<div class="onboarding__stage">
 								<div class="onboarding__wrapper">
 									<div class="onboarding__left">
 										<div class="onboarding__body">
@@ -69,7 +69,37 @@
 										</div>
 									</div>
 									<div class="onboarding__right">
-										<div class="onboarding__info"></div>
+										<div class="onboarding__info">
+											<div class="intro-sections">
+												<a href="#" class="intro-sections__item">
+													<svg class="intro-sections__icon">
+														<use xlink:href="img/sprite.svg#icon-wiki"></use>
+													</svg>
+													<div class="intro-sections__body">
+														<span class="intro-sections__title">Wiki раздел на сайте</span>
+														<span class="intro-sections__description">Помощь, которая никогда не опаздывает</span>
+													</div>
+												</a>
+												<a href="#" class="intro-sections__item">
+													<svg class="intro-sections__icon">
+														<use xlink:href="img/sprite.svg#icon-youtube"></use>
+													</svg>
+													<div class="intro-sections__body">
+														<span class="intro-sections__title">YouTube канал про маркетплейсы</span>
+														<span class="intro-sections__description">Ваша золотая кнопка на пути к миллиардам</span>
+													</div>
+												</a>
+												<a href="#" class="intro-sections__item">
+													<svg class="intro-sections__icon">
+														<use xlink:href="img/sprite.svg#icon-materials"></use>
+													</svg>
+													<div class="intro-sections__body">
+														<span class="intro-sections__title">Бесплатный курс материалов</span>
+														<span class="intro-sections__description">Да, это он</span>
+													</div>
+												</a>
+											</div>
+										</div>
 										<span class="onboarding__help">Если что, эти материалы теперь всегда будут вам доступны в личном кабинете</span>
 									</div>
 								</div>
@@ -98,16 +128,36 @@
 										</div>
 									</div>
 									<div class="onboarding__right">
-										<div class="onboarding__info"></div>
+										<div class="onboarding__info">
+											<picture class="onboarding__img">
+												<img src="img/marketplace-img.png" alt="Image">
+											</picture>
+										</div>
 										<span class="onboarding__help">Товары Вконтакте можно будет подключить в личном кабинете</span>
 									</div>
 								</div>
 							</div>
-							<div class="onboarding__stage">
+							<div class="onboarding__stage is--active">
 								<div class="onboarding__wrapper">
 									<div class="onboarding__left">
 										<div class="onboarding__body">
 											<h2 class="onboarding__heading">Добавляем API-токены</h2>
+											<div class="onboarding__inputs">
+												<div class="input-field input-field--grey onboarding__input is--error">
+													<label for="default-key" class="input-field__label">Стандартный ключ</label>
+													<div class="input-field__inner">
+														<input type="text" id="default-key" class="input-field__input" placeholder="" value="eyJhY2Nlc3NJRCI6ImVmMzNiNjY3LWNiNDAtNDdWiSo">
+														<span class="input-field__error">Недействительный ключ</span>
+													</div>
+												</div>
+												<div class="input-field input-field--grey onboarding__input">
+													<label for="statistics-key" class="input-field__label">Ключ статистики</label>
+													<div class="input-field__inner">
+														<input type="text" id="statistics-key" class="input-field__input" placeholder="">
+														<span class="input-field__error">Недействительный ключ</span>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="onboarding__buttons">
 											<a href="#" class="onboarding__btn btn btn--light">Назад</a>
@@ -120,7 +170,33 @@
 										</div>
 									</div>
 									<div class="onboarding__right">
-										<div class="onboarding__info"></div>
+										<div class="onboarding__info">
+											<div class="hint-block">
+												<h3 class="hint-block__title">Как получить ключи Wildberries?</h3>
+												<ol class="hint-block__list">
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Войдите в кабинет селлера</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Правый верхний угол, «Настройки»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Вкладка «Доступ к новому API»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Нажмите «Создать новый токен»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">
+															Создайте Стандартный ключ и Ключ статистики и скопируйте их в поля слева в кабинете Anymarkets
+															<br>
+															Названия ключей можно придумать любые.
+														</span>
+													</li>
+												</ol>
+												<a href="#" class="hint-block__btn btn">Перейти в кабинет селлера</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
