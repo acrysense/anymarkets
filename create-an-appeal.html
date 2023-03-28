@@ -27,7 +27,7 @@
 					</a>
 					<nav class="header-nav header__nav">
 						<ul class="header-nav__list">
-							<li class="header-nav__item header-nav__item--active">
+							<li class="header-nav__item @@analytics">
 								<a href="index.html" class="header-nav__link">Аналитика</a>
 							</li>
 							<li class="header-nav__item @@goods">
@@ -53,7 +53,7 @@
 									</svg>
 								</a>
 							</li>
-							<li class="header__buttons-item @@support">
+							<li class="header__buttons-item header__buttons-item--active">
 								<a href="support.html" class="header__buttons-link">
 									<svg class="header__buttons-icon">
 										<use xlink:href="img/sprite.svg#icon-support"></use>
@@ -88,7 +88,37 @@
 			<div class="page">
 				<div class="container">
 					<div class="page__top">
-						<h1 class="page__heading">Сводка</h1>
+						<h1 class="page__heading">Создать обращение</h1>
+					</div>
+					<div class="page__full">
+						<div class="page__block">
+							<div class="page__wrapper">
+								<div class="page__column page__column--wide">
+									<div class="page__item">
+										<div class="create-appeal">
+											<form action="#" class="create-appeal__form">
+												<div class="input-field input-field--grey create-appeal__input">
+													<input type="text" id="appeal-category" class="input-field__input" placeholder="Категория вопроса">
+												</div>
+												<div class="input-field input-field--grey create-appeal__input">
+													<input type="text" id="appeal-theme" class="input-field__input" placeholder="Тема">
+												</div>
+												<div class="input-field input-field--grey create-appeal__input">
+													<input type="text" id="appeal-message" class="input-field__input" placeholder="Содержание вашего вопроса">
+												</div>
+												<button class="create-appeal__btn btn">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<span>Создать обращение</span>
+												</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="page__column page__column--wide"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
