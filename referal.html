@@ -123,7 +123,7 @@
 										<span class="page__text">Минимальная сумма выплаты</span>
 										<span class="page__text">100 ₽ </span>
 									</div>
-									<a href="#" class="page__btn btn">
+									<a href="#" class="page__btn btn modal-btn" data-id="modal-referal">
 										<svg>
 											<use xlink:href="img/sprite.svg#icon-up-btn"></use>
 										</svg>
@@ -180,13 +180,87 @@
 	<!-- end of wrapper -->
 	<!-- modals -->
 	<div class="modal" id="modal-tarrifs">
-		<div class="modal__scroll">
-			<div class="modal__wrapper">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Изменить тарифный план</h2>
 				<button class="modal__close-btn modal__close" aria-label="Закрыть">
 					<svg class="modal__close-icon">
 						<use xlink:href="img/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="rates">
+						<div class="rates__item">
+							<h3 class="rates__title">«Тариф»</h3>
+							<span class="rates__description">1 месяц, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">1 990 ₽</span>
+							</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">-30% скидка за полгода</span>
+							</div>
+						</div>
+						<div class="rates__item rates__item--blue">
+							<h3 class="rates__title">«Ещё тариф»</h3>
+							<span class="rates__description">1 месяц, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">2 990 ₽ </span>
+							</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">-30% скидка за полгода</span>
+							</div>
+						</div>
+						<div class="rates__item">
+							<h3 class="rates__title">«Тариф»</h3>
+							<span class="rates__description">Полгода, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">1 720 ₽/мес. </span>
+								<span class="rates__price rates__price--old">2 990 ₽</span>
+							</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">Без скидки за месяц</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-referal">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Вывод средств</h2>
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="withdrawal">
+						<div class="withdrawal__item">
+							<h3 class="withdrawal__title">Сумма к выплате: 796 ₽ </h3>
+							<form action="#" class="withdrawal__form">
+								<div class="input-field input-field--grey withdrawal__input">
+									<input type="text" id="number-withdrawal" class="input-field__input" placeholder="Номер телефона, к которому привязана банковская карта">
+								</div>
+								<button class="withdrawal__btn btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-up-btn"></use>
+									</svg>
+									<span>Вывести средства</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="modal__overlay"></div>
