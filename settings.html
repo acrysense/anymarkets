@@ -39,8 +39,8 @@
 							<li class="header-nav__item">
 								<a href="#" class="header-nav__link">Отзывы и вопросы</a>
 							</li>
-							<li class="header-nav__item">
-								<a href="#" class="header-nav__link">Рефералка</a>
+							<li class="header-nav__item @@referal">
+								<a href="referal.html" class="header-nav__link">Рефералка</a>
 							</li>
 						</ul>
 					</nav>
@@ -105,73 +105,305 @@
 								<button class="tabs__tab">Мои бренды</button>
 							</li>
 						</ul>
-						<div class="tabs__wrapper is--active"></div>
-						<div class="tabs__wrapper">
-							<div class="profile-data">
-								<div class="profile-data__wrapper">
-									<div class="profile-data__item">
-										<h3 class="profile-data__title">Личная информация</h3>
-										<form action="#" class="profile-data__form">
-											<div class="profile-data__inputs">
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-name" class="input-field__label">Имя</label>
-													<div class="input-field__inner">
-														<input type="text" id="profile-data-name" class="input-field__input" placeholder="">
-														<span class="input-field__error">Неверное значение</span>
+						<div class="tabs__wrapper is--active">
+							<div class="page__wrapper">
+								<div class="page__row">
+									<div class="page__item">
+										<div class="tariff">
+											<div class="tariff__wrapper">
+												<div class="tariff__block">
+													<div class="tariff__group">
+														<h3 class="tariff__title">Тариф</h3>
+														<h2 class="tariff__heading">«Ещё тариф»</h2>
 													</div>
+													<a href="#" class="tariff__btn btn">Изменить тариф</a>
 												</div>
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-email" class="input-field__label">Электропочта</label>
-													<div class="input-field__inner">
-														<input type="email" id="profile-data-email" class="input-field__input" placeholder="" value="info@anymarkets.ru">
-														<span class="input-field__error">Неверное значение</span>
-													</div>
-												</div>
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-phone" class="input-field__label">Телефон</label>
-													<div class="input-field__inner">
-														<input type="text" id="profile-data-phone" class="input-field__input" placeholder="">
-														<span class="input-field__error">Неверное значение</span>
+												<div class="tariff__block">
+													<div class="tariff__group">
+														<h3 class="tariff__title">Параметры подписки</h3>
+														<div class="tariff__info">
+															<div class="tariff__inner">
+																<span class="tariff__text">Осталось, дней</span>
+																<span class="tariff__text">12</span>
+															</div>
+															<div class="tariff__inner">
+																<span class="tariff__text">Товаров доступно, шт.</span>
+																<span class="tariff__text">999 999</span>
+															</div>
+															<div class="tariff__inner">
+																<span class="tariff__text">Товаров у вас, шт.</span>
+																<span class="tariff__text">68</span>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
-											<button class="profile-data__btn btn">Сохранить</button>
-										</form>
+										</div>
 									</div>
-									<div class="profile-data__item">
-										<h3 class="profile-data__title">Изменить пароль</h3>
-										<form action="#" class="profile-data__form">
-											<div class="profile-data__inputs">
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-old-password" class="input-field__label">Старый пароль</label>
-													<div class="input-field__inner">
-														<input type="password" id="profile-data-old-password" class="input-field__input" placeholder="">
-														<span class="input-field__error">Неверное значение</span>
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Автооплата</h3>
+											<div class="page__wrapper">
+												<div class="page__column">
+													<div class="page__inner">
+														<span class="page__text">Запланированное списание</span>
+														<span class="page__text">01.04.2023</span>
+													</div>
+													<div class="page__inner">
+														<span class="page__text">Сумма</span>
+														<span class="page__text">2 990 ₽</span>
+													</div>
+													<div class="page__inner">
+														<span class="page__text">Автоматическое продление</span>
+														<span class="page__text">Да</span>
 													</div>
 												</div>
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-new-password" class="input-field__label">Новый пароль</label>
-													<div class="input-field__inner">
-														<input type="text" id="profile-data-new-password" class="input-field__input" placeholder="">
-														<span class="input-field__error">Неверное значение</span>
-													</div>
-												</div>
-												<div class="input-field input-field--grey profile-data__input">
-													<label for="profile-data-new-password-again" class="input-field__label">Новый пароль еще раз</label>
-													<div class="input-field__inner">
-														<input type="password" id="profile-data-new-password-again" class="input-field__input" placeholder="">
-														<span class="input-field__error">Неверное значение</span>
+												<div class="page__column">
+													<div class="c-card">
+														<div class="c-card__inner">
+															<div class="c-card__img">
+																<img src="img/icon-mastercard.svg" alt="Mastercard">
+															</div>
+															<div class="c-card__body">
+																<span class="c-card__title">MasterCard **** 4193</span>
+																<span class="c-card__help">Срок действия до 09/25</span>
+															</div>
+														</div>
+														<a href="#" class="c-card__link">Как отвязать карту?</a>
 													</div>
 												</div>
 											</div>
-											<button class="profile-data__btn btn">Сохранить</button>
-										</form>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="tabs__wrapper"></div>
-						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper">
+							<div class="page__wrapper">
+								<div class="page__column">
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Личная информация</h3>
+											<form action="#" class="profile-data">
+												<div class="profile-data__inputs">
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-name" class="input-field__label">Имя</label>
+														<div class="input-field__inner">
+															<input type="text" id="profile-data-name" class="input-field__input" placeholder="">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-email" class="input-field__label">Электропочта</label>
+														<div class="input-field__inner">
+															<input type="email" id="profile-data-email" class="input-field__input" placeholder="" value="info@anymarkets.ru">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-phone" class="input-field__label">Телефон</label>
+														<div class="input-field__inner">
+															<input type="text" id="profile-data-phone" class="input-field__input" placeholder="">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+												</div>
+												<button class="profile-data__btn btn">Сохранить</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="page__column">
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Изменить пароль</h3>
+											<form action="#" class="profile-data">
+												<div class="profile-data__inputs">
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-old-password" class="input-field__label">Старый пароль</label>
+														<div class="input-field__inner">
+															<input type="password" id="profile-data-old-password" class="input-field__input" placeholder="">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-new-password" class="input-field__label">Новый пароль</label>
+														<div class="input-field__inner">
+															<input type="text" id="profile-data-new-password" class="input-field__input" placeholder="">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+													<div class="input-field input-field--grey profile-data__input">
+														<label for="profile-data-new-password-again" class="input-field__label">Новый пароль еще раз</label>
+														<div class="input-field__inner">
+															<input type="password" id="profile-data-new-password-again" class="input-field__input" placeholder="">
+															<span class="input-field__error">Неверное значение</span>
+														</div>
+													</div>
+												</div>
+												<button class="profile-data__btn btn">Сохранить</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="page__block">
+								<div class="page__wrapper">
+									<div class="page__column page__column--wide">
+										<div class="page__item">
+											<div class="marketplaces">
+												<div class="c-switch marketplaces__switch">
+													<div class="c-switch__inner">
+														<picture class="c-switch__img">
+															<img src="img/icon-wildberries.svg" alt="Image">
+														</picture>
+														<div class="c-switch__body">
+															<span class="c-switch__title">Wildberries</span>
+															<span class="c-switch__help">Нажмите переключатель, чтобы отключить маркетплейс</span>
+														</div>
+													</div>
+													<label for="switch-wildberries" class="switch c-switch__label">
+														<input type="checkbox" id="switch-wildberries" class="switch__input" checked>
+														<div class="switch__group">
+															<span class="switch__icon"></span>
+														</div>
+													</label>
+												</div>
+												<form action="#" class="marketplaces__form">
+													<div class="input-field input-field--grey marketplaces__input is--error">
+														<label for="default-key" class="input-field__label">Стандартный ключ</label>
+														<div class="input-field__inner">
+															<input type="text" id="default-key" class="input-field__input" placeholder="" value="eyJhY2Nlc3NJRCI6ImVmMzNiNjY3LWNiNDAtNDdWiSo">
+															<span class="input-field__error">Недействительный ключ</span>
+														</div>
+													</div>
+													<div class="input-field input-field--grey marketplaces__input">
+														<label for="statistics-key" class="input-field__label">Ключ статистики</label>
+														<div class="input-field__inner">
+															<input type="text" id="statistics-key" class="input-field__input" placeholder="">
+															<span class="input-field__error">Недействительный ключ</span>
+														</div>
+													</div>
+													<button class="marketplaces__btn btn">Сохранить</button>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="page__column page__column--wide">
+										<div class="page__item">
+											<div class="hint-block hint-block--border">
+												<h3 class="hint-block__title">Как получить ключи Wildberries?</h3>
+												<ol class="hint-block__list">
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Войдите в кабинет селлера</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Правый верхний угол, «Настройки»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Вкладка «Доступ к новому API»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">Нажмите «Создать новый токен»</span>
+													</li>
+													<li class="hint-block__list-item">
+														<span class="hint-block__list-elem">
+															Создайте Стандартный ключ и Ключ статистики и скопируйте их в поля слева в кабинете Anymarkets
+															<br>
+															Названия ключей можно придумать любые.
+														</span>
+													</li>
+												</ol>
+												<a href="#" class="hint-block__btn btn">Перейти в кабинет селлера</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__wrapper">
+									<div class="page__row">
+										<div class="marketplaces">
+											<div class="c-switch marketplaces__switch">
+												<div class="c-switch__inner">
+													<picture class="c-switch__img">
+														<img src="img/icon-ozon.svg" alt="Image">
+													</picture>
+													<div class="c-switch__body">
+														<span class="c-switch__title">Ozon</span>
+														<span class="c-switch__help">Нажмите переключатель, чтобы отключить маркетплейс</span>
+													</div>
+												</div>
+												<label for="switch-ozon" class="switch c-switch__label">
+													<input type="checkbox" id="switch-ozon" class="switch__input" checked>
+													<div class="switch__group">
+														<span class="switch__icon"></span>
+													</div>
+												</label>
+											</div>
+											<div class="c-switch marketplaces__switch">
+												<div class="c-switch__inner">
+													<picture class="c-switch__img">
+														<img src="img/icon-ya.svg" alt="Image">
+													</picture>
+													<div class="c-switch__body">
+														<span class="c-switch__title">Яндекс.Маркет</span>
+														<span class="c-switch__help">Нажмите переключатель, чтобы отключить маркетплейс</span>
+													</div>
+												</div>
+												<label for="switch-ya" class="switch c-switch__label">
+													<input type="checkbox" id="switch-ya" class="switch__input" checked>
+													<div class="switch__group">
+														<span class="switch__icon"></span>
+													</div>
+												</label>
+											</div>
+											<div class="c-switch marketplaces__switch">
+												<div class="c-switch__inner">
+													<picture class="c-switch__img">
+														<img src="img/icon-vk.svg" alt="Image">
+													</picture>
+													<div class="c-switch__body">
+														<span class="c-switch__title">Вконтакте</span>
+														<span class="c-switch__help">Нажмите переключатель, чтобы отключить маркетплейс</span>
+													</div>
+												</div>
+												<label for="switch-vk" class="switch c-switch__label">
+													<input type="checkbox" id="switch-vk" class="switch__input" checked>
+													<div class="switch__group">
+														<span class="switch__icon"></span>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="page__wrapper">
+								<div class="page__row">
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Добавить бренд</h3>
+											<div class="page__wrapper">
+												<div class="page__column">
+													<div class="add-brand">
+														<form action="#" class="add-brand__form">
+															<div class="input-field input-field--grey add-brand__input">
+																<input type="text" id="brand-name" class="input-field__input" placeholder="Введите название">
+															</div>
+															<button class="add-brand__btn btn">Сохранить</button>
+														</form>
+													</div>
+												</div>
+												<div class="page__column"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
