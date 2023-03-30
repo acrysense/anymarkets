@@ -98,13 +98,31 @@
 										<div class="create-appeal">
 											<form action="#" class="create-appeal__form">
 												<div class="input-field input-field--grey create-appeal__input">
-													<input type="text" id="appeal-category" class="input-field__input" placeholder="Категория вопроса">
+													<div class="input-field__dropdown">
+														<input type="text" id="appeal-category" class="input-field__input" placeholder="Категория вопроса">
+														<div class="input-field__dropdown-wrapper">
+															<button class="input-field__option">Continent</button>
+															<button class="input-field__option">Paulo Conte</button>
+															<button class="input-field__option">Continental</button>
+														</div>
+													</div>
 												</div>
 												<div class="input-field input-field--grey create-appeal__input">
 													<input type="text" id="appeal-theme" class="input-field__input" placeholder="Тема">
 												</div>
 												<div class="input-field input-field--grey create-appeal__input">
-													<input type="text" id="appeal-message" class="input-field__input" placeholder="Содержание вашего вопроса">
+													<div class="input-field__select">
+														<select class="js-select" data-placeholder=" ">
+															<option data-placeholder="true"></option>
+															<option value="value_01">Continent</option>
+															<option value="value_02">Paulo Conte</option>
+															<option value="value_03">Continental</option>
+															<option value="value_04">Conti</option>
+														</select>
+													</div>
+												</div>
+												<div class="input-field input-field--grey create-appeal__input">
+													<textarea id="appeal-messagee" class="input-field__textarea" placeholder="Содержание вашего вопроса"></textarea>
 												</div>
 												<button class="create-appeal__btn btn">
 													<svg>
