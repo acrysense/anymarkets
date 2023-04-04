@@ -132,7 +132,15 @@
 											<thead class="c-table__head">
 												<tr class="c-table__row">
 													<td class="c-table__elem">
-														<span class="c-table__heading">#</span>
+														<div class="c-table__inner">
+															<span class="c-table__heading">#</span>
+															<div class="square-checkbox c-table__checkbox">
+																<input type="checkbox" id="table-all" class="square-checkbox__input">
+																<label for="table-all" class="square-checkbox__label">
+																	<span class="square-checkbox__icon"></span>
+																</label>
+															</div>
+														</div>
 													</td>
 													<td class="c-table__elem">
 														<span class="c-table__heading">Наименование</span>
@@ -155,12 +163,21 @@
 													<td class="c-table__elem">
 														<span class="c-table__heading">Уведомления</span>
 													</td>
+													<td class="c-table__elem"></td>
 												</tr>
 											</thead>
 											<tbody class="c-table__body">
 												<tr class="c-table__row">
 													<td class="c-table__elem">
-														<span class="c-table__text">1</span>
+														<div class="c-table__inner">
+															<span class="c-table__text">1</span>
+															<div class="square-checkbox c-table__checkbox">
+																<input type="checkbox" id="table-all" class="square-checkbox__input">
+																<label for="table-all" class="square-checkbox__label">
+																	<span class="square-checkbox__icon"></span>
+																</label>
+															</div>
+														</div>
 													</td>
 													<td class="c-table__elem">
 														<span class="c-table__text">
@@ -173,13 +190,144 @@
 														</span>
 													</td>
 													<td class="c-table__elem">
-														<span class="c-table__text">Нет</span>
+														<span class="c-table__text c-table__text--grey">Нет</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--green">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-checkmark"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--red">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-close"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-process"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--yellow">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-pause"></use>
+															</svg>
+														</span>
 													</td>
 													<td class="c-table__elem"></td>
-													<td class="c-table__elem"></td>
-													<td class="c-table__elem"></td>
-													<td class="c-table__elem"></td>
-													<td class="c-table__elem"></td>
+													<td class="c-table__elem">
+														<ul class="c-controls c-table__controls">
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-edit"></use>
+																	</svg>
+																</button>
+															</li>
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-copied"></use>
+																	</svg>
+																</button>
+															</li>
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-trash"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr class="c-table__row">
+													<td class="c-table__elem">
+														<div class="c-table__inner">
+															<span class="c-table__text">2</span>
+															<div class="square-checkbox c-table__checkbox">
+																<input type="checkbox" id="table-all" class="square-checkbox__input">
+																<label for="table-all" class="square-checkbox__label">
+																	<span class="square-checkbox__icon"></span>
+																</label>
+															</div>
+														</div>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">
+															<div class="c-table__group">
+																<picture class="c-table__img">
+																	<img src="img/order-01.jpg" alt="Image">
+																</picture>
+																<span class="c-table__text">Ремень для фотоаппарата</span>
+															</div>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">2</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--green">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-checkmark"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--red">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-close"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-process"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--yellow">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-pause"></use>
+															</svg>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__status-icon c-table__status-icon--yellow">2</span>
+													</td>
+													<td class="c-table__elem">
+														<ul class="c-controls c-table__controls">
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-edit"></use>
+																	</svg>
+																</button>
+															</li>
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-copied"></use>
+																	</svg>
+																</button>
+															</li>
+															<li class="c-controls__item">
+																<button class="c-controls__btn">
+																	<svg class="c-controls__btn-icon">
+																		<use xlink:href="img/sprite.svg#icon-trash"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</td>
 												</tr>
 											</tbody>
 										</table>

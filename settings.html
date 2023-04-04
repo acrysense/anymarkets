@@ -99,20 +99,22 @@
 						<h1 class="page__heading">Настройки</h1>
 					</div>
 					<div class="tabs">
-						<ul class="tabs__list">
-							<li class="tabs__item is--active">
-								<button class="tabs__tab">Тариф и оплата</button>
-							</li>
-							<li class="tabs__item">
-								<button class="tabs__tab">Данные профиля</button>
-							</li>
-							<li class="tabs__item">
-								<button class="tabs__tab">Мои маркетплейсы</button>
-							</li>
-							<li class="tabs__item">
-								<button class="tabs__tab">Мои бренды</button>
-							</li>
-						</ul>
+						<div class="tabs__top">
+							<ul class="tabs__list">
+								<li class="tabs__item is--active">
+									<button class="tabs__tab">Тариф и оплата</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Данные профиля</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Мои маркетплейсы</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Мои бренды</button>
+								</li>
+							</ul>
+						</div>
 						<div class="tabs__wrapper is--active">
 							<div class="page__wrapper">
 								<div class="page__row">
@@ -561,7 +563,14 @@
 													<div class="add-brand">
 														<form action="#" class="add-brand__form">
 															<div class="input-field input-field--grey add-brand__input">
-																<input type="text" id="brand-name" class="input-field__input" placeholder="Введите название">
+																<div class="input-field__dropdown">
+																	<input type="text" id="brand-name" class="input-field__input" placeholder="Введите название">
+																	<div class="input-field__dropdown-wrapper">
+																		<button class="input-field__option">Continent</button>
+																		<button class="input-field__option">Paulo Conte</button>
+																		<button class="input-field__option">Continental</button>
+																	</div>
+																</div>
 															</div>
 															<button class="add-brand__btn btn">Сохранить</button>
 														</form>

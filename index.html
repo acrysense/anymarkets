@@ -98,12 +98,554 @@
 					<div class="page__top">
 						<h1 class="page__heading">Сводка</h1>
 					</div>
+					<div class="tabs">
+						<div class="tabs__top">
+							<ul class="tabs__list">
+								<li class="tabs__item">
+									<button class="tabs__tab">Все маркетплейсы</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Wildberries</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Ozon</button>
+								</li>
+							</ul>
+							<ul class="tabs__list">
+								<li class="tabs__item">
+									<button class="tabs__tab">Сегодня</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Вчера</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Эта неделя</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">Март</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-calendar"></use>
+										</svg>
+										<span>Период</span>
+									</button>
+								</li>
+							</ul>
+							<ul class="tabs__list">
+								<li class="tabs__item is--active">
+									<button class="tabs__tab">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-block"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-list"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button class="tabs__tab">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-settings"></use>
+										</svg>
+										<span>Настройка страницы</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper is--active">
+							<div class="page__wrapper">
+								<div class="page__column">
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title notification-block__title--red">Итого</h3>
+											</div>
+											<div class="notification-block__body">
+												<div class="notification-block__list">
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Заказов, <span>шт.</span></span>
+														<span class="notification-block__value">12</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Выкуплено, <span>шт.</span></span>
+														<span class="notification-block__value">7</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Отказов, <span>шт.</span></span>
+														<span class="notification-block__value">0</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Возвратов, <span>шт.</span></span>
+														<span class="notification-block__value">0</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Комиссии, <span>₽</span></span>
+														<span class="notification-block__value">1 391</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Хранение, <span>₽</span></span>
+														<span class="notification-block__value">29</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Транспортировка, <span>₽</span></span>
+														<span class="notification-block__value">890</span>
+													</div>
+													<div class="notification-block__inner">
+														<span class="notification-block__value">Прочее, <span>₽</span></span>
+														<span class="notification-block__value">601</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__column">
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Всего расходов</h3>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__heading">Собираем данные ⏰</p>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block notification-block--red">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Всего расходов</h3>
+											</div>
+											<div class="notification-block__body">
+												<div class="notification-block__list">
+													<div class="notification-block__inner">
+														<span class="notification-block__value notification-block__value--big">139 400 ₽</span>
+														<span class="notification-block__value notification-block__value--big">28 шт.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__column">
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Лидеры продаж</h3>
+											</div>
+											<div class="notification-block__body">
+												<div class="c-products">
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-01.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Обложка на паспорт</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+														<span class="c-products__value">2213 шт.</span>
+													</div>
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-02.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Кожаный ремень Gucci</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+														<span class="c-products__value">23 шт.</span>
+													</div>
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-03.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Кошелек Safari с на...</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+														<span class="c-products__value">21 шт.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Лидер оборачиваемости</h3>
+											</div>
+											<div class="notification-block__body">
+												<div class="c-products">
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-01.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Обложка на паспорт</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+														<span class="c-products__value">12 дн.</span>
+													</div>
+												</div>
+												<p class="notification-block__description notification-block__description--grey">Текущие остатки товара будут проданы за 12 дней.</p>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title notification-block__title--red">Худшая оборачиваемость</h3>
+											</div>
+											<div class="notification-block__body">
+												<div class="c-products">
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-01.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Папка для ноутбуков с держателем</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+														<span class="c-products__value">2123 дн.</span>
+													</div>
+												</div>
+												<p class="notification-block__description notification-block__description--grey">Наверное лучше будет заменить товар на другой.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__column">
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Поступил ответ</h3>
+												<span class="notification-block__help">14:52</span>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">Поступил ответ от службы поддержки по обращению: <a href="#">Не загружается товар в Ozon.</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block notification-block--red">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Смена API-ключей 🔥</h3>
+												<span class="notification-block__help">12:01</span>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">Необходимо срочно заменить API-ключи Wildberries в личном кабинете в настройках.</p>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Товар заканчивается</h3>
+												<span class="notification-block__help">вчера</span>
+											</div>
+											<div class="notification-block__body">
+												<div class="c-products notification-block__products">
+													<div class="c-products__item">
+														<picture class="c-products__img">
+															<img src="img/products-01.jpg" alt="Image">
+														</picture>
+														<div class="c-products__body">
+															<span class="c-products__title">Обложка на паспорт</span>
+															<span class="c-products__help">SKU00129110245</span>
+														</div>
+													</div>
+												</div>
+												<p class="notification-block__description">Товар скоро закончится. Необходимо сделать поставку 178 шт., чтобы хватило на месяц.</p>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="notification-block notification-block--light">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Собираем аналитику</h3>
+												<span class="notification-block__help">31.01</span>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">Надо будет немного подождать. Примерно это занимает 15 минут, но в отдельных случаях может быть немного дольше.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__wrapper">
+							<div class="page__table custom-table">
+								<div class="custom-table__scroll" data-simplebar>
+									<div class="custom-table__scroll-wrap">
+										<table class="c-table">
+											<thead class="c-table__head">
+												<tr class="c-table__row">
+													<td class="c-table__elem">
+														<span class="c-table__heading">Дата</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__heading">Наименование товара</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__heading">Категория</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__heading">Артикул</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Заказов WB</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Заказов Ozon</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Выкуплено WB</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Выкуплено Ozon</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Отмен WB</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Отмен Ozon</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Возвратов WB</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__heading">Остаток на своих складах</span>
+													</td>
+												</tr>
+											</thead>
+											<tbody class="c-table__body">
+												<tr class="c-table__row">
+													<td class="c-table__elem">
+														<span class="c-table__text">21.03.2023</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">
+															<div class="c-table__group">
+																<picture class="c-table__img">
+																	<img src="img/order-01.jpg" alt="Image">
+																</picture>
+																<span class="c-table__text">Кошелек</span>
+															</div>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">Аксессуары</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">SF019387723648</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">29</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">12</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">24</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">2</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">10</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">15</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">4</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">1</span>
+													</td>
+												</tr>
+												<tr class="c-table__row">
+													<td class="c-table__elem">
+														<span class="c-table__text">21.03.2023</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">
+															<div class="c-table__group">
+																<picture class="c-table__img">
+																	<img src="img/order-02.jpg" alt="Image">
+																</picture>
+																<span class="c-table__text">Кухонный нож</span>
+															</div>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">Сумки и рюкзаки</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">SF019387723648</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">29</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">12</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">24</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">2</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">10</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">15</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">4</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">1</span>
+													</td>
+												</tr>
+												<tr class="c-table__row">
+													<td class="c-table__elem">
+														<span class="c-table__text">21.03.2023</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">
+															<div class="c-table__group">
+																<picture class="c-table__img">
+																	<img src="img/order-03.jpg" alt="Image">
+																</picture>
+																<span class="c-table__text">Визитница/Кредитница женская в подарочной упаковке</span>
+															</div>
+														</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">Сумки и рюкзаки</span>
+													</td>
+													<td class="c-table__elem">
+														<span class="c-table__text">SF019387723648</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">29</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">12</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">24</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">2</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">10</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">15</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">4</span>
+													</td>
+													<td class="c-table__elem c-table__elem--right">
+														<span class="c-table__text">1</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="custom-table__bottom">
+									<div class="custom-table__inner">
+										<span class="custom-table__help">Показать по</span>
+										<div class="default-select custom-table__select">
+											<select class="js-select">
+												<option value="value_01">Все</option>
+												<option value="value_02">15</option>
+												<option value="value_03">20</option>
+												<option value="value_04">50</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom-table__inner">
+										<div class="c-pagination">
+											<ul class="c-pagination__list">
+												<li class="c-pagination__item">
+													<button class="c-pagination__btn c-pagination__btn--prev">
+														<svg class="c-pagination__btn-icon">
+															<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+														</svg>
+													</button>
+												</li>
+												<li class="c-pagination__item is--active">
+													<button class="c-pagination__btn">1</button>
+												</li>
+												<li class="c-pagination__item">
+													<button class="c-pagination__btn">2</button>
+												</li>
+												<li class="c-pagination__item">
+													<button class="c-pagination__btn c-pagination__btn--plug" disabled>...</button>
+												</li>
+												<li class="c-pagination__item">
+													<button class="c-pagination__btn">23</button>
+												</li>
+												<li class="c-pagination__item">
+													<button class="c-pagination__btn c-pagination__btn--next">
+														<svg class="c-pagination__btn-icon">
+															<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+														</svg>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__wrapper"></div>
+					</div>
 				</div>
 			</div>
 			<!-- end of page -->
 			<!-- end of content -->
 		</div>
 		<!-- end of wrapper -->
+		<!-- toasts -->
+		<div class="toasts" id="toasts">
+			<div class="toasts__item">
+				<h3 class="toasts__title">Настройки страницы изменены</h3>
+				<button class="toasts__close" aria-label="Закрыть">
+					<svg class="toasts__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="toasts__item toasts__item--red">
+				<h3 class="toasts__title">Произошла ошибка</h3>
+				<button class="toasts__close" aria-label="Закрыть">
+					<svg class="toasts__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- end of toasts -->
 		<!-- modals -->
 		<div class="modal" id="modal-tarrifs">
 			<div class="modal__wrapper">
