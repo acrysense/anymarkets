@@ -100,8 +100,8 @@
 					</div>
 					<div class="tabs">
 						<div class="tabs__top">
-							<ul class="tabs__list">
-								<li class="tabs__item">
+							<ul class="tabs__list not--tabs">
+								<li class="tabs__item is--active">
 									<button class="tabs__tab">Все маркетплейсы</button>
 								</li>
 								<li class="tabs__item">
@@ -111,8 +111,8 @@
 									<button class="tabs__tab">Ozon</button>
 								</li>
 							</ul>
-							<ul class="tabs__list">
-								<li class="tabs__item">
+							<ul class="tabs__list not--tabs">
+								<li class="tabs__item is--active">
 									<button class="tabs__tab">Сегодня</button>
 								</li>
 								<li class="tabs__item">
@@ -148,8 +148,10 @@
 										</svg>
 									</button>
 								</li>
+							</ul>
+							<ul class="tabs__list not--tabs">
 								<li class="tabs__item">
-									<button class="tabs__tab">
+									<button class="tabs__tab modal-btn" data-id="modal-settings">
 										<svg>
 											<use xlink:href="img/sprite.svg#icon-settings"></use>
 										</svg>
@@ -256,14 +258,6 @@
 							</div>
 						</div>
 						<div class="page__item">
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
-							<div class="tabs__wrapper"></div>
 							<div class="tabs__wrapper is--active">
 								<div class="page__wrapper">
 									<div class="page__column page__column--2">
@@ -542,6 +536,38 @@
 								</div>
 							</div>
 							<div class="tabs__wrapper">
+								<div class="page__item">
+									<div class="page__row">
+										<div class="page__item">
+											<div class="page__block">
+												<div class="page__group">
+													<div class="page__buttons">
+														<a href="#" class="page__btn btn btn--light">Скачать в Excel</a>
+														<div class="input-field input-field--grey page__input">
+															<div class="input-field__select">
+																<select class="js-select" data-placeholder="Настроить столбцы">
+																	<option data-placeholder="true"></option>
+																	<option value="value_01">Continent</option>
+																	<option value="value_02">Paulo Conte</option>
+																	<option value="value_03">Continental</option>
+																	<option value="value_04">Conti</option>
+																</select>
+															</div>
+														</div>
+														<div class="square-checkbox page__checkbox">
+															<input type="checkbox" id="group-products" class="square-checkbox__input">
+															<label for="group-products" class="square-checkbox__label">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Группировать товары</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="page__item"></div>
 								<div class="page__table custom-table">
 									<div class="custom-table__scroll" data-simplebar>
 										<div class="custom-table__scroll-wrap">
@@ -773,7 +799,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="tabs__wrapper"></div>
 						</div>
 					</div>
 				</div>
@@ -970,6 +995,65 @@
 								</span>
 								<a href="#" class="import__btn btn">Перейти в настройки</a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__overlay"></div>
+		</div>
+		<div class="modal" id="modal-settings">
+			<div class="modal__wrapper">
+				<div class="modal__top">
+					<h2 class="modal__heading">Импорт товаров</h2>
+					<button class="modal__close-btn modal__close" aria-label="Закрыть">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__scroll" data-simplebar>
+					<div class="modal__scroll-wrap">
+						<div class="modal__block">
+							<h3 class="modal__title">Основное</h3>
+							<form action="#" class="modal-form modal__form">
+								<div class="modal-form__checkboxes">
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" id="settings-01" class="square-checkbox__input">
+										<label for="settings-01" class="square-checkbox__label">
+											<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
+											<span class="square-checkbox__icon"></span>
+										</label>
+									</div>
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" id="settings-02" class="square-checkbox__input">
+										<label for="settings-02" class="square-checkbox__label">
+											<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
+											<span class="square-checkbox__icon"></span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal__block">
+							<h3 class="modal__title">Дополнительное</h3>
+							<form action="#" class="modal-form modal__form">
+								<div class="modal-form__checkboxes">
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" id="settings-03" class="square-checkbox__input">
+										<label for="settings-03" class="square-checkbox__label">
+											<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
+											<span class="square-checkbox__icon"></span>
+										</label>
+									</div>
+									<div class="square-checkbox modal-form__checkbox">
+										<input type="checkbox" id="settings-04" class="square-checkbox__input">
+										<label for="settings-04" class="square-checkbox__label">
+											<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
+											<span class="square-checkbox__icon"></span>
+										</label>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
