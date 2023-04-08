@@ -159,45 +159,320 @@
 							</ul>
 						</div>
 						<div class="tabs__wrapper is--active">
-							<div class="page__item">
-								<div class="notification-block">
-									<div class="notification-block__top">
-										<h3 class="notification-block__title notification-block__title--red">Ошибка заполнения</h3>
-										<span class="notification-block__help">14:52</span>
-									</div>
-									<div class="notification-block__body">
-										<p class="notification-block__description">Указаны неверные параметры цвета товара. Укажите цвет из доступных в каталоге вариантов</p>
+							<div class="page__wrapper">
+								<div class="page__column page__column--9">
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Основное</h3>
+											<form action="#" class="page-form">
+												<div class="page__wrapper">
+													<div class="page__column page__column--6">
+														<div class="page-form__wrapper">
+															<div class="input-field input-field--grey page-form__input">
+																<div class="input-field__inner">
+																	<input type="text" class="input-field__input input-field__input--md" placeholder="Название товара">
+																	<div class="c-tooltip input-field__tooltip">
+																		<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																		<div class="c-tooltip__dropdown">
+																			<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="input-field input-field--grey page-form__input">
+																<div class="input-field__inner">
+																	<div class="input-field__dropdown input-field__dropdown--md">
+																		<input type="text" id="brand-name" class="input-field__input" placeholder="Бренд">
+																		<div class="input-field__dropdown-wrapper">
+																			<button class="input-field__option">Continent</button>
+																			<button class="input-field__option">Paulo Conte</button>
+																			<button class="input-field__option">Continental</button>
+																		</div>
+																	</div>
+																	<div class="c-tooltip input-field__tooltip">
+																		<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																		<div class="c-tooltip__dropdown">
+																			<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="input-field input-field--grey page-form__input">
+																<div class="input-field__inner">
+																	<div class="input-field__dropdown input-field__dropdown--md">
+																		<input type="text" id="brand-name" class="input-field__input" placeholder="Страна производства">
+																		<div class="input-field__dropdown-wrapper">
+																			<button class="input-field__option">Continent</button>
+																			<button class="input-field__option">Paulo Conte</button>
+																			<button class="input-field__option">Continental</button>
+																		</div>
+																	</div>
+																	<div class="c-tooltip input-field__tooltip">
+																		<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																		<div class="c-tooltip__dropdown">
+																			<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="input-field input-field--grey page-form__input is--error">
+																<div class="input-field__inner">
+																	<input type="text" class="input-field__input input-field__input--md" placeholder="Артикул">
+																	<div class="c-tooltip input-field__tooltip">
+																		<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																		<div class="c-tooltip__dropdown">
+																			<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																		</div>
+																	</div>
+																</div>
+																<span class="input-field__error">Артикул производителя должен быть уникальным</span>
+															</div>
+															<div class="input-field input-field--grey page-form__input">
+																<div class="input-field__inner">
+																	<textarea id="appeal-messagee" class="input-field__textarea input-field__textarea--md" placeholder="Описание"></textarea>
+																	<div class="c-tooltip input-field__tooltip">
+																		<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																		<div class="c-tooltip__dropdown">
+																			<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="page__column page__column--6">
+														<div class="page-form__wrapper">
+															<div class="page-form__inner">
+																<div class="input-field input-field--grey page-form__input">
+																	<div class="input-field__inner">
+																		<input type="text" class="input-field__input input-field__input--sm" placeholder="Вес с упаковкой">
+																		<span class="input-field__help">грамм</span>
+																		<div class="c-tooltip input-field__tooltip">
+																			<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																			<div class="c-tooltip__dropdown">
+																				<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="page-form__inner">
+																<div class="input-field input-field--grey page-form__input">
+																	<div class="input-field__inner">
+																		<input type="text" class="input-field__input input-field__input--sm" placeholder="Длина упаковки">
+																		<span class="input-field__help">мм.</span>
+																		<div class="c-tooltip input-field__tooltip">
+																			<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																			<div class="c-tooltip__dropdown">
+																				<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="page-form__inner">
+																<div class="input-field input-field--grey page-form__input">
+																	<div class="input-field__inner">
+																		<input type="text" class="input-field__input input-field__input--sm" placeholder="Ширина упаковки">
+																		<span class="input-field__help">мм.</span>
+																	</div>
+																</div>
+															</div>
+															<div class="page-form__inner">
+																<div class="input-field input-field--grey page-form__input">
+																	<div class="input-field__inner">
+																		<input type="text" class="input-field__input input-field__input--sm" placeholder="Высота упаковки">
+																		<span class="input-field__help">мм.</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="page__item">
-								<div class="notification-block">
-									<div class="notification-block__top">
-										<h3 class="notification-block__title">Поступил ответ</h3>
-										<span class="notification-block__help">14:52</span>
+								<div class="page__column page__column--3">
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title notification-block__title--red">Ошибка заполнения</h3>
+												<span class="notification-block__help">14:52</span>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">Указаны неверные параметры цвета товара. Укажите цвет из доступных в каталоге вариантов</p>
+											</div>
+										</div>
 									</div>
-									<div class="notification-block__body">
-										<p class="notification-block__description">Поступил ответ от службы поддержки по обращению: <a href="#">Не загружается товар в Ozon.</a></p>
+									<div class="page__item">
+										<div class="notification-block">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Поступил ответ</h3>
+												<span class="notification-block__help">14:52</span>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">Поступил ответ от службы поддержки по обращению: <a href="#">Не загружается товар в Ozon.</a></p>
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="page__item">
-								<div class="notification-block notification-block--light">
-									<div class="notification-block__top">
-										<h3 class="notification-block__title">Уведомлений нет</h3>
-									</div>
-									<div class="notification-block__body">
-										<p class="notification-block__description">
-											<b>Как только будет что-то важное по этому товару, мы напишем в этой колонке.</b>
-										</p>
-										<svg class="notification-block__icon">
-											<use xlink:href="img/sprite.svg#icon-notification"></use>
-										</svg>
+									<div class="page__item">
+										<div class="notification-block notification-block--light">
+											<div class="notification-block__top">
+												<h3 class="notification-block__title">Уведомлений нет</h3>
+											</div>
+											<div class="notification-block__body">
+												<p class="notification-block__description">
+													<b>Как только будет что-то важное по этому товару, мы напишем в этой колонке.</b>
+												</p>
+												<svg class="notification-block__icon">
+													<use xlink:href="img/sprite.svg#icon-notification"></use>
+												</svg>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper">
+							<div class="page__wrapper">
+								<div class="page__column page__column--7">
+									<div class="page__item">
+										<div class="page__block">
+											<h3 class="page__title">Вариация 1</h3>
+											<form action="#" class="page-form">
+												<div class="page-form__wrapper">
+													<div class="input-field input-field--grey page-form__input">
+														<div class="input-field__inner">
+															<input type="text" class="input-field__input input-field__input--md" placeholder="Название для Яндекс.Маркета">
+															<div class="c-tooltip input-field__tooltip">
+																<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																<div class="c-tooltip__dropdown">
+																	<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field input-field--grey page-form__input">
+														<div class="input-field__inner">
+															<input type="text" class="input-field__input input-field__input--md" placeholder="Ссылка в вашем магазине для Яндекс.Маркета">
+															<div class="c-tooltip input-field__tooltip">
+																<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																<div class="c-tooltip__dropdown">
+																	<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field input-field--grey page-form__input">
+														<div class="input-field__inner">
+															<div class="input-field__dropdown input-field__dropdown--md">
+																<input type="text" id="brand-name" class="input-field__input" placeholder="Цвет">
+																<div class="input-field__dropdown-wrapper">
+																	<button class="input-field__option">Continent</button>
+																	<button class="input-field__option">Paulo Conte</button>
+																	<button class="input-field__option">Continental</button>
+																</div>
+															</div>
+															<div class="c-tooltip input-field__tooltip">
+																<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																<div class="c-tooltip__dropdown">
+																	<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field input-field--grey page-form__input">
+														<div class="input-field__inner">
+															<input type="text" class="input-field__input input-field__input--md" placeholder="Артикул" disabled>
+															<div class="square-checkbox input-field__checkbox">
+																<input type="checkbox" id="vendor-code-data" class="square-checkbox__input">
+																<label for="vendor-code-data" class="square-checkbox__label">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Сформировать автоматически</span>
+																</label>
+															</div>
+															<div class="c-tooltip input-field__tooltip">
+																<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																<div class="c-tooltip__dropdown">
+																	<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																</div>
+															</div>
+														</div>
+														<span class="input-field__error">Артикул производителя должен быть уникальным</span>
+													</div>
+													<div class="input-field input-field--grey page-form__input">
+														<div class="input-field__inner">
+															<input type="text" class="input-field__input input-field__input--md" placeholder="Штрихкод">
+															<div class="square-checkbox input-field__checkbox">
+																<input type="checkbox" id="barcode-data" class="square-checkbox__input">
+																<label for="barcode-data" class="square-checkbox__label">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Сформировать автоматически</span>
+																</label>
+															</div>
+															<div class="c-tooltip input-field__tooltip">
+																<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																<div class="c-tooltip__dropdown">
+																	<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																</div>
+															</div>
+														</div>
+														<span class="input-field__error">Артикул производителя должен быть уникальным</span>
+													</div>
+													<div class="page-form__group visibility-group">
+														<div class="square-checkbox page-form__checkbox visibility-group__checkbox">
+															<input type="checkbox" id="different-prices-data" class="square-checkbox__input">
+															<label for="different-prices-data" class="square-checkbox__label">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Цены будут разные на разных маркетплейсах</span>
+															</label>
+														</div>
+														<div class="visibility-group__wrapper">
+															<div class="visibility-group__inner">
+																<span class="visibility-group__help">Цена Wildberries</span>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена обычная">
+																</div>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена со скидкой">
+																</div>
+															</div>
+															<div class="visibility-group__inner">
+																<span class="visibility-group__help">Цена Ozon</span>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена обычная">
+																</div>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена со скидкой">
+																</div>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена Premium">
+																</div>
+															</div>
+															<div class="visibility-group__inner">
+																<span class="visibility-group__help">Цена Яндекс.Маркет</span>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена обычная">
+																</div>
+																<div class="input-field input-field--grey visibility-group__input">
+																	<input type="text" class="input-field__input input-field__input--sm" placeholder="Цена со скидкой">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="page__column page__column--5">
+									<div class="page__item">
+										<div class="page__block"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="tabs__wrapper"></div>
 						<div class="tabs__wrapper"></div>
 						<div class="tabs__wrapper"></div>
