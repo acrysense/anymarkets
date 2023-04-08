@@ -158,7 +158,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="tabs__wrapper is--active">
+						<div class="tabs__wrapper is--activ">
 							<div class="page__wrapper">
 								<div class="page__column page__column--9">
 									<div class="page__item">
@@ -242,6 +242,38 @@
 													</div>
 													<div class="page__column page__column--6">
 														<div class="page-form__wrapper">
+															<div class="page-form__inner">
+																<span class="page-form__help">НДС</span>
+																<div class="page-form__checkboxes">
+																	<div class="circle-checkbox page-form__checkbox">
+																		<input type="radio" id="nds-01" class="circle-checkbox__input" name="nds" checked>
+																		<label for="nds-01" class="circle-checkbox__label">
+																			<span class="circle-checkbox__icon"></span>
+																			<span class="circle-checkbox__title">Не облагается</span>
+																		</label>
+																	</div>
+																	<div class="circle-checkbox page-form__checkbox">
+																		<input type="radio" id="nds-02" class="circle-checkbox__input" name="nds">
+																		<label for="nds-02" class="circle-checkbox__label">
+																			<span class="circle-checkbox__icon"></span>
+																			<span class="circle-checkbox__title">10%</span>
+																		</label>
+																	</div>
+																	<div class="circle-checkbox page-form__checkbox">
+																		<input type="radio" id="nds-03" class="circle-checkbox__input" name="nds">
+																		<label for="nds-03" class="circle-checkbox__label">
+																			<span class="circle-checkbox__icon"></span>
+																			<span class="circle-checkbox__title">20%</span>
+																		</label>
+																	</div>
+																</div>
+																<div class="c-tooltip page-form__tooltip">
+																	<button class="c-tooltip__trigger" aria-label="Подсказка">?</button>
+																	<div class="c-tooltip__dropdown">
+																		<p class="c-tooltip__description">Артикул производителя, под которым товар продается в вашей учетной системе</p>
+																	</div>
+																</div>
+															</div>
 															<div class="page-form__inner">
 																<div class="input-field input-field--grey page-form__input">
 																	<div class="input-field__inner">
@@ -334,7 +366,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="tabs__wrapper">
+						<div class="tabs__wrapper is--active">
 							<div class="page__wrapper">
 								<div class="page__column page__column--7">
 									<div class="page__item">
@@ -468,7 +500,110 @@
 								</div>
 								<div class="page__column page__column--5">
 									<div class="page__item">
-										<div class="page__block"></div>
+										<div class="page__block">
+											<div class="photo-upload">
+												<ul class="photo-upload__list">
+													<li class="photo-upload__item is--active">
+														<button class="photo-upload__tabs">
+															<img src="img/photo-01.jpg" alt="Image">
+														</button>
+														<button class="photo-upload__delete">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-close"></use>
+															</svg>
+														</button>
+													</li>
+													<li class="photo-upload__item">
+														<button class="photo-upload__tabs">
+															<img src="img/photo-02.jpg" alt="Image">
+														</button>
+														<button class="photo-upload__delete">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-close"></use>
+															</svg>
+														</button>
+													</li>
+													<li class="photo-upload__item photo-upload__item--label">
+														<label for="upload-01" class="photo-upload__label">
+															<input type="file" id="upload-01" class="photo-upload__input">
+															<svg class="photo-upload__plus">
+																<use xlink:href="img/sprite.svg#icon-plus-thin"></use>
+															</svg>
+														</label>
+													</li>
+												</ul>
+												<div class="photo-upload__wrapper is--active">
+													<picture class="photo-upload__cropper">
+														<img src="img/photo-01.jpg" alt="Image">
+													</picture>
+													<div class="photo-upload__controls">
+														<button class="photo-upload__control photo-upload__control--lock">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-lock"></use>
+															</svg>
+														</button>
+														<button class="photo-upload__control photo-upload__control--cut">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-cut"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="photo-upload__wrapper">
+													<picture class="photo-upload__cropper">
+														<img src="img/photo-02.jpg" alt="Image">
+													</picture>
+													<div class="photo-upload__controls">
+														<button class="photo-upload__control photo-upload__control--lock">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-lock"></use>
+															</svg>
+														</button>
+														<button class="photo-upload__control photo-upload__control--cut">
+															<svg>
+																<use xlink:href="img/sprite.svg#icon-cut"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="photo-upload__bottom">
+													<a href="#" class="photo-upload__btn btn">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-save"></use>
+														</svg>
+														<span>Сохранить изменения</span>
+													</a>
+													<span class="photo-upload__help">Все актуальные изменения сохранены в 17:21</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="page__item">
+										<div class="page__block">
+											<div class="photo-upload">
+												<ul class="photo-upload__list">
+													<li class="photo-upload__item photo-upload__item--label">
+														<label for="upload-01" class="photo-upload__label">
+															<input type="file" id="upload-01" class="photo-upload__input">
+															<svg class="photo-upload__plus">
+																<use xlink:href="img/sprite.svg#icon-plus-thin"></use>
+															</svg>
+														</label>
+													</li>
+												</ul>
+												<div class="photo-upload__wrapper is--active">
+													<picture class="photo-upload__cropper"></picture>
+												</div>
+												<div class="photo-upload__bottom">
+													<a href="#" class="photo-upload__btn btn">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-save"></use>
+														</svg>
+														<span>Сохранить изменения</span>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
