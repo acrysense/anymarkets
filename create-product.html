@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1280, initial-scale=1.0">
+	<meta name="viewport" content="width=1366, initial-scale=1.0">
 	<title>Anymarkets - Создать товар</title>
 	<meta property="og:title" content="Anymarkets - Создать товар">
 	<meta property="og:description" content="Описание проекта">
@@ -242,7 +242,7 @@
 													</div>
 													<div class="page__column page__column--6">
 														<div class="page-form__wrapper">
-															<div class="page-form__inner">
+															<div class="page-form__inner page-form__inner--padding">
 																<span class="page-form__help">НДС</span>
 																<div class="page-form__checkboxes">
 																	<div class="circle-checkbox page-form__checkbox">
@@ -502,6 +502,37 @@
 									<div class="page__item">
 										<div class="page__block">
 											<div class="photo-upload">
+												<div class="photo-upload__top">
+													<div class="photo-upload__checkboxes">
+														<div class="default-checkbox photo-upload__checkbox">
+															<input type="radio" id="photo-upload-01" class="default-checkbox__input" name="photo-upload" checked>
+															<label for="photo-upload-01" class="default-checkbox__label">
+																<span class="default-checkbox__title">WB</span>
+															</label>
+														</div>
+														<div class="default-checkbox photo-upload__checkbox">
+															<input type="radio" id="photo-upload-02" class="default-checkbox__input" name="photo-upload">
+															<label for="photo-upload-02" class="default-checkbox__label">
+																<span class="default-checkbox__title">OZ</span>
+															</label>
+														</div>
+													</div>
+													<div class="photo-upload__loader">
+														<!-- svg only for example -->
+														<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 10px 0;">
+															<mask id="path-1-inside-1_602_16546" fill="white">
+																<path d="M8.14133 21.0019C10.2605 21.5697 12.5043 21.4595 14.5576 20.6867C16.6108 19.9139 18.3705 18.5173 19.5894 16.6932C20.8082 14.869 21.4251 12.7089 21.3533 10.5161C21.2815 8.3234 20.5247 6.20823 19.1891 4.46768C17.8536 2.72714 16.0064 1.44866 13.9069 0.811806C11.8075 0.174949 9.56129 0.211705 7.48382 0.916914C5.40634 1.62212 3.60194 2.96035 2.32404 4.74366C1.04614 6.52697 0.358928 8.66577 0.358929 10.8597L2.45893 10.8597C2.45893 9.10455 3.0087 7.39351 4.03102 5.96687C5.05334 4.54022 6.49686 3.46963 8.15884 2.90547C9.82082 2.3413 11.6178 2.31189 13.2973 2.82138C14.9769 3.33087 16.4546 4.35365 17.5231 5.74608C18.5915 7.13852 19.197 8.83065 19.2544 10.5848C19.3119 12.339 18.8184 14.0671 17.8433 15.5265C16.8682 16.9858 15.4605 18.103 13.8178 18.7213C12.1752 19.3395 10.3802 19.4277 8.68485 18.9735L8.14133 21.0019Z" />
+															</mask>
+															<path d="M8.14133 21.0019C10.2605 21.5697 12.5043 21.4595 14.5576 20.6867C16.6108 19.9139 18.3705 18.5173 19.5894 16.6932C20.8082 14.869 21.4251 12.7089 21.3533 10.5161C21.2815 8.3234 20.5247 6.20823 19.1891 4.46768C17.8536 2.72714 16.0064 1.44866 13.9069 0.811806C11.8075 0.174949 9.56129 0.211705 7.48382 0.916914C5.40634 1.62212 3.60194 2.96035 2.32404 4.74366C1.04614 6.52697 0.358928 8.66577 0.358929 10.8597L2.45893 10.8597C2.45893 9.10455 3.0087 7.39351 4.03102 5.96687C5.05334 4.54022 6.49686 3.46963 8.15884 2.90547C9.82082 2.3413 11.6178 2.31189 13.2973 2.82138C14.9769 3.33087 16.4546 4.35365 17.5231 5.74608C18.5915 7.13852 19.197 8.83065 19.2544 10.5848C19.3119 12.339 18.8184 14.0671 17.8433 15.5265C16.8682 16.9858 15.4605 18.103 13.8178 18.7213C12.1752 19.3395 10.3802 19.4277 8.68485 18.9735L8.14133 21.0019Z" fill="#5B5CE3" stroke="url(#paint0_linear_602_16546)" stroke-width="4" mask="url(#path-1-inside-1_602_16546)" />
+															<defs>
+																<linearGradient id="paint0_linear_602_16546" x1="12.2188" y1="12.3599" x2="1.21875" y2="7.35986" gradientUnits="userSpaceOnUse">
+																	<stop stop-color="#5B5CE3" />
+																	<stop offset="1" stop-color="#F5F5FA" />
+																</linearGradient>
+															</defs>
+														</svg>
+													</div>
+												</div>
 												<ul class="photo-upload__list">
 													<li class="photo-upload__item is--active">
 														<div class="photo-upload__elem">
@@ -619,246 +650,250 @@
 				</div>
 			</div>
 			<!-- end of page -->
-			<!-- end of content -->
 		</div>
-		<!-- end of wrapper -->
-		<!-- modals -->
-		<div class="modal" id="modal-tarrifs">
-			<div class="modal__wrapper">
-				<div class="modal__top">
-					<h2 class="modal__heading">Изменить тарифный план</h2>
-					<button class="modal__close-btn modal__close" aria-label="Закрыть">
-						<svg class="modal__close-icon">
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="modal__scroll" data-simplebar>
-					<div class="modal__scroll-wrap">
-						<div class="rates">
-							<div class="rates__item">
-								<h3 class="rates__title">«Тариф»</h3>
-								<span class="rates__description">1 месяц, до 50 товаров</span>
-								<div class="rates__prices">
-									<span class="rates__price rates__price--new">1 990 ₽</span>
-								</div>
-								<div class="rates__inner">
-									<a href="#" class="rates__btn btn">Выбрать</a>
-									<span class="rates__discount">-30% скидка за полгода</span>
-								</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer"></footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- modals -->
+	<div class="modal" id="modal-tarrifs">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Изменить тарифный план</h2>
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="rates">
+						<div class="rates__item">
+							<h3 class="rates__title">«Тариф»</h3>
+							<span class="rates__description">1 месяц, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">1 990 ₽</span>
 							</div>
-							<div class="rates__item rates__item--blue">
-								<h3 class="rates__title">«Ещё тариф»</h3>
-								<span class="rates__description">1 месяц, до 50 товаров</span>
-								<div class="rates__prices">
-									<span class="rates__price rates__price--new">2 990 ₽ </span>
-								</div>
-								<div class="rates__inner">
-									<a href="#" class="rates__btn btn">Выбрать</a>
-									<span class="rates__discount">-30% скидка за полгода</span>
-								</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">-30% скидка за полгода</span>
 							</div>
-							<div class="rates__item">
-								<h3 class="rates__title">«Тариф»</h3>
-								<span class="rates__description">Полгода, до 50 товаров</span>
-								<div class="rates__prices">
-									<span class="rates__price rates__price--new">1 720 ₽/мес. </span>
-									<span class="rates__price rates__price--old">2 990 ₽</span>
-								</div>
-								<div class="rates__inner">
-									<a href="#" class="rates__btn btn">Выбрать</a>
-									<span class="rates__discount">Без скидки за месяц</span>
-								</div>
+						</div>
+						<div class="rates__item rates__item--blue">
+							<h3 class="rates__title">«Ещё тариф»</h3>
+							<span class="rates__description">1 месяц, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">2 990 ₽ </span>
+							</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">-30% скидка за полгода</span>
+							</div>
+						</div>
+						<div class="rates__item">
+							<h3 class="rates__title">«Тариф»</h3>
+							<span class="rates__description">Полгода, до 50 товаров</span>
+							<div class="rates__prices">
+								<span class="rates__price rates__price--new">1 720 ₽/мес. </span>
+								<span class="rates__price rates__price--old">2 990 ₽</span>
+							</div>
+							<div class="rates__inner">
+								<a href="#" class="rates__btn btn">Выбрать</a>
+								<span class="rates__discount">Без скидки за месяц</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="modal__overlay"></div>
 		</div>
-		<div class="modal" id="modal-referal">
-			<div class="modal__wrapper">
-				<div class="modal__top">
-					<h2 class="modal__heading">Вывод средств</h2>
-					<button class="modal__close-btn modal__close" aria-label="Закрыть">
-						<svg class="modal__close-icon">
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="modal__scroll" data-simplebar>
-					<div class="modal__scroll-wrap">
-						<div class="withdrawal">
-							<div class="withdrawal__item">
-								<h3 class="withdrawal__title">Сумма к выплате: 796 ₽ </h3>
-								<form action="#" class="withdrawal__form">
-									<div class="input-field input-field--grey withdrawal__input">
-										<input type="text" id="number-withdrawal" class="input-field__input" placeholder="Номер телефона, с привязанной банковской картой">
-									</div>
-									<button class="withdrawal__btn btn">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-up-btn"></use>
-										</svg>
-										<span>Вывести средства</span>
-									</button>
-								</form>
-							</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-referal">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Вывод средств</h2>
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="withdrawal">
+						<div class="withdrawal__item">
+							<h3 class="withdrawal__title">Сумма к выплате: 796 ₽ </h3>
+							<form action="#" class="withdrawal__form">
+								<div class="input-field input-field--grey withdrawal__input">
+									<input type="text" id="number-withdrawal" class="input-field__input" placeholder="Номер телефона, с привязанной банковской картой">
+								</div>
+								<button class="withdrawal__btn btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-up-btn"></use>
+									</svg>
+									<span>Вывести средства</span>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="modal__overlay"></div>
 		</div>
-		<div class="modal" id="modal-import">
-			<div class="modal__wrapper">
-				<div class="modal__top">
-					<h2 class="modal__heading">Импорт товаров</h2>
-					<button class="modal__close-btn modal__close" aria-label="Закрыть">
-						<svg class="modal__close-icon">
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="modal__scroll" data-simplebar>
-					<div class="modal__scroll-wrap">
-						<div class="modal__notification">
-							<p class="modal__description">В рамках текущего личного кабинета все вариации товаров будут объединены в один товар.</p>
-							<p class="modal__help">По тарифному плану доступно для импорта: 999931 товаров.</p>
-						</div>
-						<div class="import">
-							<div class="import__item">
-								<div class="import__top">
-									<h3 class="import__title">Wildberries</h3>
-									<span class="import__status import__status--process">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-process"></use>
-										</svg>
-										<span>Импортируется</span>
-									</span>
-								</div>
-								<span class="import__text">Всего товаров: 109</span>
-								<span class="import__text">Импортировано: 0</span>
-								<a href="#" class="import__btn btn">
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-import">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Импорт товаров</h2>
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="modal__notification">
+						<p class="modal__description">В рамках текущего личного кабинета все вариации товаров будут объединены в один товар.</p>
+						<p class="modal__help">По тарифному плану доступно для импорта: 999931 товаров.</p>
+					</div>
+					<div class="import">
+						<div class="import__item">
+							<div class="import__top">
+								<h3 class="import__title">Wildberries</h3>
+								<span class="import__status import__status--process">
 									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+										<use xlink:href="img/sprite.svg#icon-process"></use>
 									</svg>
-									<span>Импортировать Wildberries</span>
-								</a>
-							</div>
-							<div class="import__item">
-								<div class="import__top">
-									<h3 class="import__title">Ozon</h3>
-									<span class="import__status import__status--success">Завершено в 17:21 17.02.2028 </span>
-								</div>
-								<span class="import__text">Всего товаров: 109</span>
-								<span class="import__text">Импортировано: 0</span>
-								<a href="#" class="import__btn btn">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-									</svg>
-									<span>Импортировать Wildberries</span>
-								</a>
-							</div>
-							<div class="import__item">
-								<div class="import__top">
-									<h3 class="import__title">Wildberries</h3>
-									<span class="import__status">Не запускался</span>
-								</div>
-								<span class="import__text">Всего товаров: 109</span>
-								<span class="import__text">Импортировано: 0</span>
-								<a href="#" class="import__btn btn">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-									</svg>
-									<span>Импортировать Wildberries</span>
-								</a>
-							</div>
-							<div class="import__item">
-								<div class="import__top">
-									<h3 class="import__title">Ozon</h3>
-								</div>
-								<span class="import__text">Подключите маркетплейс в настройках</span>
-								<a href="#" class="import__btn btn">Перейти в настройки</a>
-							</div>
-							<div class="import__item">
-								<div class="import__top">
-									<h3 class="import__title">Подключите маркетплейсы</h3>
-								</div>
-								<span class="import__text">
-									У вас не подключено ни одного маркетплейса.<br>
-									Добавьте API-ключи в настройках и возвращайтесь, чтобы импортировать товары. Будем ждать вас тут!
+									<span>Импортируется</span>
 								</span>
-								<a href="#" class="import__btn btn">Перейти в настройки</a>
 							</div>
+							<span class="import__text">Всего товаров: 109</span>
+							<span class="import__text">Импортировано: 0</span>
+							<a href="#" class="import__btn btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+								</svg>
+								<span>Импортировать Wildberries</span>
+							</a>
+						</div>
+						<div class="import__item">
+							<div class="import__top">
+								<h3 class="import__title">Ozon</h3>
+								<span class="import__status import__status--success">Завершено в 17:21 17.02.2028 </span>
+							</div>
+							<span class="import__text">Всего товаров: 109</span>
+							<span class="import__text">Импортировано: 0</span>
+							<a href="#" class="import__btn btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+								</svg>
+								<span>Импортировать Wildberries</span>
+							</a>
+						</div>
+						<div class="import__item">
+							<div class="import__top">
+								<h3 class="import__title">Wildberries</h3>
+								<span class="import__status">Не запускался</span>
+							</div>
+							<span class="import__text">Всего товаров: 109</span>
+							<span class="import__text">Импортировано: 0</span>
+							<a href="#" class="import__btn btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+								</svg>
+								<span>Импортировать Wildberries</span>
+							</a>
+						</div>
+						<div class="import__item">
+							<div class="import__top">
+								<h3 class="import__title">Ozon</h3>
+							</div>
+							<span class="import__text">Подключите маркетплейс в настройках</span>
+							<a href="#" class="import__btn btn">Перейти в настройки</a>
+						</div>
+						<div class="import__item">
+							<div class="import__top">
+								<h3 class="import__title">Подключите маркетплейсы</h3>
+							</div>
+							<span class="import__text">
+								У вас не подключено ни одного маркетплейса.<br>
+								Добавьте API-ключи в настройках и возвращайтесь, чтобы импортировать товары. Будем ждать вас тут!
+							</span>
+							<a href="#" class="import__btn btn">Перейти в настройки</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="modal__overlay"></div>
 		</div>
-		<div class="modal" id="modal-settings">
-			<div class="modal__wrapper">
-				<div class="modal__top">
-					<h2 class="modal__heading">Импорт товаров</h2>
-					<button class="modal__close-btn modal__close" aria-label="Закрыть">
-						<svg class="modal__close-icon">
-							<use xlink:href="img/sprite.svg#icon-close"></use>
-						</svg>
-					</button>
-				</div>
-				<div class="modal__scroll" data-simplebar>
-					<div class="modal__scroll-wrap">
-						<div class="modal__block">
-							<h3 class="modal__title">Основное</h3>
-							<form action="#" class="modal-form modal__form">
-								<div class="modal-form__checkboxes">
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" id="settings-01" class="square-checkbox__input">
-										<label for="settings-01" class="square-checkbox__label">
-											<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
-											<span class="square-checkbox__icon"></span>
-										</label>
-									</div>
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" id="settings-02" class="square-checkbox__input">
-										<label for="settings-02" class="square-checkbox__label">
-											<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
-											<span class="square-checkbox__icon"></span>
-										</label>
-									</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<div class="modal" id="modal-settings">
+		<div class="modal__wrapper">
+			<div class="modal__top">
+				<h2 class="modal__heading">Импорт товаров</h2>
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="modal__scroll" data-simplebar>
+				<div class="modal__scroll-wrap">
+					<div class="modal__block">
+						<h3 class="modal__title">Основное</h3>
+						<form action="#" class="modal-form modal__form">
+							<div class="modal-form__checkboxes">
+								<div class="square-checkbox modal-form__checkbox">
+									<input type="checkbox" id="settings-01" class="square-checkbox__input">
+									<label for="settings-01" class="square-checkbox__label">
+										<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
+										<span class="square-checkbox__icon"></span>
+									</label>
 								</div>
-							</form>
-						</div>
-						<div class="modal__block">
-							<h3 class="modal__title">Дополнительное</h3>
-							<form action="#" class="modal-form modal__form">
-								<div class="modal-form__checkboxes">
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" id="settings-03" class="square-checkbox__input">
-										<label for="settings-03" class="square-checkbox__label">
-											<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
-											<span class="square-checkbox__icon"></span>
-										</label>
-									</div>
-									<div class="square-checkbox modal-form__checkbox">
-										<input type="checkbox" id="settings-04" class="square-checkbox__input">
-										<label for="settings-04" class="square-checkbox__label">
-											<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
-											<span class="square-checkbox__icon"></span>
-										</label>
-									</div>
+								<div class="square-checkbox modal-form__checkbox">
+									<input type="checkbox" id="settings-02" class="square-checkbox__input">
+									<label for="settings-02" class="square-checkbox__label">
+										<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
+										<span class="square-checkbox__icon"></span>
+									</label>
 								</div>
-							</form>
-						</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal__block">
+						<h3 class="modal__title">Дополнительное</h3>
+						<form action="#" class="modal-form modal__form">
+							<div class="modal-form__checkboxes">
+								<div class="square-checkbox modal-form__checkbox">
+									<input type="checkbox" id="settings-03" class="square-checkbox__input">
+									<label for="settings-03" class="square-checkbox__label">
+										<span class="square-checkbox__title">Показывать издержки со знаком минус</span>
+										<span class="square-checkbox__icon"></span>
+									</label>
+								</div>
+								<div class="square-checkbox modal-form__checkbox">
+									<input type="checkbox" id="settings-04" class="square-checkbox__input">
+									<label for="settings-04" class="square-checkbox__label">
+										<span class="square-checkbox__title">Показывать доходы со знаком плюс</span>
+										<span class="square-checkbox__icon"></span>
+									</label>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="modal__overlay"></div>
 		</div>
-		<!-- end of modals -->
-		<!-- scripts -->
-		<script src="js/vendor.min.js"></script>
-		<script src="js/app.min.js"></script>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modals -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>
