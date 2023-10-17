@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
-<body>
+<body class="scroll-disabled">
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
@@ -494,7 +494,7 @@
 													</div>
 												</div>
 												<div class="page__item">
-													<div class="notification-block notification-block--red">
+													<div class="notification-block notification-block--red edu-selected">
 														<div class="notification-block__top">
 															<h3 class="notification-block__title">Смена API-ключей 🔥</h3>
 															<span class="notification-block__help">12:01</span>
@@ -1056,32 +1056,12 @@
 		<div class="modal__overlay"></div>
 	</div>
 	<!-- end of modals -->
-	<!-- edu -->
-	<div class="edu" id="edu-1">
-		<div class="edu__notification edu__notification--left-long">
-			<p class="edu__description">Переключайте вид страницы, чтобы увидеть подробную таблицу ваших заказов и продаж и общие данные.</p>
-			<a href="#" class="edu__btn btn btn--sm btn--light">Понятно</a>
-		</div>
-	</div>
-	<div class="edu" id="edu-2">
-		<div class="edu__notification edu__notification--left-short">
-			<p class="edu__description">Просматривайте данные как по всем маркетплейсам вместе, так и по каждому в отдельности.</p>
-			<a href="#" class="edu__btn btn btn--sm btn--light">Понятно</a>
-		</div>
-	</div>
-	<div class="edu" id="edu-3">
-		<div class="edu__notification edu__notification--top-short">
-			<p class="edu__description">Выбирайте нужные инструменты в верхнем меню - там много полезного.</p>
-			<a href="#" class="edu__btn btn btn--sm btn--light">Понятно</a>
-		</div>
-	</div>
-	<div class="edu" id="edu-4">
+	<div class="edu is--active" id="edu-4">
 		<div class="edu__notification edu__notification--bottom-long">
 			<p class="edu__description">Если будет что-то непонятно, то переходите в наш YouTube, мы все подробно расскажем.</p>
 			<a href="#" class="edu__btn btn btn--sm btn--light">Понятно</a>
 		</div>
 	</div>
-	<!-- end of edu -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
